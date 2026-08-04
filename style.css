@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: lightgrey;
@@ -20,6 +26,8 @@ nav a {
     color: navy;
     margin: 10px;
     font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
 }
 
 section {
@@ -32,6 +40,8 @@ section {
 img {
     width: 150px;
     border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
 input[type="submit"] {
@@ -60,4 +70,22 @@ th {
 
 td {
     padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Only ONE responsive rule - makes nav vertical on small screens */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }

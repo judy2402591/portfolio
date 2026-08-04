@@ -3,26 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: lightgrey;
+    padding: 10px;
 }
-
 header {
     background-color: navy;
     color: white;
     text-align: center;
     padding: 20px;
 }
-
 nav {
     text-align: center;
     margin: 20px;
 }
-
 nav a {
-    text-decoration: none;
     color: navy;
     margin: 10px;
     font-weight: bold;
@@ -81,8 +77,6 @@ textarea {
     border-radius: 5px;
     box-sizing: border-box;
 }
-
-/* Only ONE responsive rule - makes nav vertical on small screens */
 @media (max-width: 768px) {
     nav a {
         display: block;

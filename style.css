@@ -193,6 +193,7 @@ input[type="submit"]:hover {
         flex-direction: column;
         gap: 15px;
         text-align: center;
+    }
     .navbar {
         flex-wrap: wrap;
         justify-content: center;

@@ -54,17 +54,17 @@ section {
 .about img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 50%; /*makes the image circular */
     margin-bottom: 15px;
 }
 .about p {
     margin-bottom: 10px;
 }
-@media (min-width: 700px) {
+@media (min-width: 700px) { /* when screen atleast 700 px, display the image and text flex */
     .about {
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 30px; /*gives them space */
     }
     .about h2 {
         width: 100%;
@@ -74,23 +74,23 @@ section {
     }
 }
 .education table {
-    width: 100%;
+    width: 100%; /* takes available width */
     border-collapse: collapse;
 }
 .education th,
 .education td {
-    padding: 12px;
+    padding: 12px; /* space inside cells */
     text-align: left;
 }
-.education th {
+.education th { /* changes the table header */
     background-color: #21194f;
     color: white;
 }
-.education tr:nth-child(even) {
+.education tr:nth-child(even) { /* selects the even rows */
     background-color: #eee9ff;
 }
 
-.education tr:nth-child(odd) {
+.education tr:nth-child(odd) { /* selects the odd rows*/
     background-color: white;
 }
 
@@ -99,12 +99,12 @@ section {
 }
 
 .skills ul {
-    list-style: none;
+    list-style: none; /* removes default bulet*/
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* if there is no enough space, move to the next line */
     gap: 10px;
 }
-.skills li {
+.skills li { /* makes it look like a card */
     padding: 10px 15px;
     background-color: #eee9ff;
     border: 1px solid #8b5cf6;
@@ -116,8 +116,7 @@ section {
 .contact form {
     margin-top: 15px;
 }
-
-input[type="text"],
+input[type="text"], /* apply these style for the two boxes*/
 input[type="email"],
 textarea {
     width: 100%;
@@ -127,19 +126,16 @@ textarea {
     margin-top: 5px;
     font-family: Arial, sans-serif;
 }
-
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
     border: 2px solid #8b5cf6;
     outline: none;
 }
-
 textarea {
     resize: vertical;
     min-height: 100px;
 }
-
 input[type="submit"] {
     background-color: #21194f;
     color: white;

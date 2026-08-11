@@ -15,7 +15,7 @@ header {
     text-align: center;
     padding: 25px;
 }
-header h1 {
+header h1 { /* header and title different sizes */
     font-size: 30px;
 }
 header p {

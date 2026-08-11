@@ -28,20 +28,20 @@ nav {
 }
 nav a {
     color: #25205c;
-    text-decoration: none;
+    text-decoration: none; /* removes the underline of the links */
     margin: 0 10px;
     font-weight: bold;
 }
 nav a:hover {
-    color: #8b5cf6;
+    color: #8b5cf6; /*so color changes -- pseudo class */
 }
 nav a:first-child {
-    color: #8b5cf6;
+    color: #8b5cf6; /* pseudo class -- selects the first <a> */
 }
 h2 {
     margin-bottom: 15px;
 }
-h2::after {
+h2::after { /* pseudo element -- adds the shape after every h2 */
     content: " ✦";
     font-size: 15px;
 }
